@@ -1,0 +1,18 @@
+.brands{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 73px 0;
+        border-bottom: 1px solid #F3D1BF;
+        flex-wrap: wrap;
+        gap:24px 60px;
+    }
+}
+@include mobile(){
+    .brands{
+        &__wrapper{
+            justify-content: center;
+        }
+    }
+}

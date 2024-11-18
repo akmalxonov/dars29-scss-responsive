@@ -1,0 +1,27 @@
+.brag{
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        .card{
+            padding: 45px 0 38px 48px;
+            border: 1px solid #F3D1BF;
+            h3{
+                font-size: 40px;
+                font-weight: 800;
+                line-height: 48px;
+                margin-bottom: 13px;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+@include mobile(){
+    .brag{
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.accessibility{
+    padding: 200px 0 215px 0;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 13px;
+        align-items: center;
+    }
+    &__left{
+        transform: translateY(-10px);
+        h5{
+            font-size: 16px;
+            font-weight: 400;
+            color: #EF6D58;
+            margin-bottom: 30px;
+        }
+        h6{
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 28px;
+            width: 55%;
+        }
+        a{
+            font-size: 16px;
+            font-weight: 400;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                color: blue;
+            }
+        }
+    }
+    &__right{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: end;
+    }
+    .card1{
+        padding: 48px;
+        height: 336px;
+        background-color: white;
+        border-radius: 6px 6px 0 6px ;
+        .accessibility-img{
+            border-radius: 50%;
+            background-color: #EF6C57;
+            width: 80px;
+            margin-bottom: 41px;
+            img{
+                padding: 24px;
+            }
+        }
+    }
+    .card2{
+        padding: 105px 48px 48px 48px;
+        height: 272px;
+        border-radius:0 6px 6px 0;
+    }
+    &__card{
+        border: 1px solid #F3D1BF;
+        h3{
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 19px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            color: #391400A3;
+        }
+    }
+}
+@include mobile(){
+    .accessibility{
+        padding: 128px 0 112px 0;
+        &__wrapper{
+            grid-template-columns: 1fr;
+            gap: 36px;
+        }
+        &__right{
+            grid-template-columns: 1fr;
+            .card1{
+                border-radius: 6px 6px 0 0;
+            }
+            .card2{
+                border-radius: 0 0 6px 6px;
+            }
+        }
+        &__left{
+            transform: none;
+            h6{
+                width: 90%;
+            }
+        }
+    }
+}
